@@ -1,0 +1,28 @@
+form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+textarea {
+    padding: 10px;
+    border: 1px solid black;
+    outline: none;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+fieldset {
+    background-color: beige;
+
+}
+
+legend {
+    background-color: white;
+}

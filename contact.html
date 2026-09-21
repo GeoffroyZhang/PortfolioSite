@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- Le site sera en langue française majoritairement avec un peu de chinois et d'anglais sûrement -->
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <!-- La balise title affiche seulement le titre de la page dans l'onglet -->
+    <title>Accueil - Présentation de la recherche</title>
+    <!-- Ajout de la balise link pour joindre le fichier HTML au fichier CSS -->
+    <link rel="stylesheet" href="style/style.css"/>
+    <link rel="stylesheet" href="style/contact.css"
+</head>
+
+<body>
+
+    <header>
+        <img src="images/index/Arsenal_originale.jpg" alt="Logo du site">
+        <nav class="nav">
+            <a href="index.html">Accueil</a>
+            <a href="a-propos.html">À propos</a>
+            <a href="projets.html">Projets</a>
+            <a href="ressources.html">Ressources</a>
+            <a href="articles.html">Articles</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+
+        <section>
+            <h2>Contact</h2>
+            <div>
+                <p>
+                    Si vous voulez lire mon mémoire de recherche n'hésitez pas à me contacter ! 
+                    <a href="mailto:zhanggeoffroy@outlook.fr">Besoin d'informations ? Écrivez-moi !</a>
+                </p>
+            </div>
+
+            <div>
+                <p>
+                    Vous pouvez aussi remplir le formulaire de contact. 
+                </p>
+                    <!-- On laisse les guillemets vides dans l'argument action car on indique qu'on reste sur cette page.
+                    L'argument method indique le moyen par lequel les données rentrées par l'utilisateur vont être renvoyées. On a get (les données sont écrites dans l'URL) et post (99 % des cas, qui permet d'envoyer un maximum de données) -->
+                    <form method="post" action="">
+
+                        <fieldset>
+                            <legend>Vos coordonnées</legend>
+                            <!-- Les attributs "id" et "for" permettent de faire le lien entre le label et le champ. -->
+                            <label for="prenom">Prénom</label>
+                            <input type="text" name="prenom" id="prenom"> <br>
+                            <label for="nom">Nom</label>
+                            <input type="text" name="nom" id="nom"> <br>
+                            <label for="email">Adresse e-mail</label> 
+                            <input type="e-mail" name = "email" id="email" required> <br>
+                            <label for="pays">Pays</label> 
+                            <input type="text" name="pays" id="prenom"> <br>
+                            <label for="ville">Ville</label> 
+                            <input type="text" name="ville" id="ville">
+                        </fieldset>
+                
+                        <fieldset>
+                            <legend>Autre</legend>
+                            <label for="message"> Un message ?</label><br>
+                            <textarea name="message" id="message"></textarea>
+                        </fieldset>
+
+                        <input type="submit" value="Envoyer">
+                    </form>
+        
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div>
+            <a target="_blank" href="https://github.com/GeoffroyZhang/protocole_recherche_sdhc_memoire">
+                <img src="images/index/github_logo.svg" alt="Logo du site web GitHub"/>
+            </a>
+
+            <a target="_blank" href="https://www.linkedin.com/in/geoffroy-zhang">
+                <img src="images/index/linkedin_logo.svg" alt="Logo du site web LinkedIn"/>
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

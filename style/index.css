@@ -1,0 +1,70 @@
+/* Haut de la page */
+section.top-page {
+    background-image: url(../images/index/potala_palace.jpg);
+    background-size: cover;
+    height: 80vh;
+    padding: 25px;
+}
+
+.titre {
+    color: white;
+    font-size: 80px;
+    padding: 20px 50px;
+    text-align: left;
+}
+
+.scroll-down {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+}
+
+header .header {
+    display: flex;
+    align-items: center;
+}
+
+.banniere {
+    position: relative;
+    padding: 20px 50px;
+}
+
+.Citation {
+    color: red;
+    font-weight: bold;
+}
+
+.a_propos_main {
+    width: 50%;
+    margin: auto;
+}
+
+
+/* Thèmes de recherche */
+
+/* On met en place une flex box avec un espacement des éléments en evenly que l'on recouvre avec wrap pour forcer le saut de ligne si les différents éléments ne tiennent pas sur une même ligne*/
+.themes-recherche {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+    flex-wrap: wrap;
+}
+
+.themes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.3%;
+}
+
+.themes-icon {
+    font-size: 50px;
+    color: rgb(198, 60, 60);
+}
+
+.theme-nom {
+    font-weight: 500;
+    text-align: center;
+}
+
