@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <!-- Le site sera en langue française majoritairement avec un peu de chinois et d'anglais sûrement -->
-<html>
+<html lang="fr">
 
 
 <head>
     <meta charset="utf-8">
     <!-- La balise title affiche seulement le titre de la page dans l'onglet -->
-    <title>Accueil - Présentation de la recherche</title>
+    <title>Contact</title>
     <!-- Ajout de la balise link pour joindre le fichier HTML au fichier CSS -->
     <link rel="stylesheet" href="style/style.css"/>
-    <link rel="stylesheet" href="style/contact.css"
+    <link rel="stylesheet" href="style/contact.css">
+    <!-- Importation des kits de fontawesome -->
+    <script src="https://kit.fontawesome.com/85447f10bb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -27,50 +29,46 @@
     </header>
     
     <main>
-
-        <section>
-            <h2>Contact</h2>
-            <div>
-                <p>
-                    Si vous voulez lire mon mémoire de recherche n'hésitez pas à me contacter ! 
-                    <a href="mailto:zhanggeoffroy@outlook.fr">Besoin d'informations ? Écrivez-moi !</a>
-                </p>
+    
+    <section class="page-contact">
+        <!-- Création de la structure du formulaire -->
+        <form>
+            <h1>Contactez-moi !</h1>
+            <div class="separation"></div>
+            <div class="corps-formulaire">
+                <div class="gauche">
+                    <div class="groupe">
+                        <label>Votre prénom</label>
+                        <input type="text">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="groupe">
+                        <label>Votre nom</label>
+                        <input type="text">
+                        <i class="fa-solid fa-id-badge"></i>
+                    </div>
+                    <div class="groupe">
+                        <label>Votre adresse e-mail</label>
+                        <input type="e-mail">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>    
+                </div>
+                <div class="droite">
+                    <div class="groupe">
+                        <label>Message</label>
+                        <textarea></textarea>
+                    </div>
+                </div>
             </div>
 
-            <div>
-                <p>
-                    Vous pouvez aussi remplir le formulaire de contact. 
-                </p>
-                    <!-- On laisse les guillemets vides dans l'argument action car on indique qu'on reste sur cette page.
-                    L'argument method indique le moyen par lequel les données rentrées par l'utilisateur vont être renvoyées. On a get (les données sont écrites dans l'URL) et post (99 % des cas, qui permet d'envoyer un maximum de données) -->
-                    <form method="post" action="">
-
-                        <fieldset>
-                            <legend>Vos coordonnées</legend>
-                            <!-- Les attributs "id" et "for" permettent de faire le lien entre le label et le champ. -->
-                            <label for="prenom">Prénom</label>
-                            <input type="text" name="prenom" id="prenom"> <br>
-                            <label for="nom">Nom</label>
-                            <input type="text" name="nom" id="nom"> <br>
-                            <label for="email">Adresse e-mail</label> 
-                            <input type="e-mail" name = "email" id="email" required> <br>
-                            <label for="pays">Pays</label> 
-                            <input type="text" name="pays" id="prenom"> <br>
-                            <label for="ville">Ville</label> 
-                            <input type="text" name="ville" id="ville">
-                        </fieldset>
-                
-                        <fieldset>
-                            <legend>Autre</legend>
-                            <label for="message"> Un message ?</label><br>
-                            <textarea name="message" id="message"></textarea>
-                        </fieldset>
-
-                        <input type="submit" value="Envoyer">
-                    </form>
-        
+            <div class="pied-formulaire">
+                    <button>Envoyer le message</button>
             </div>
-        </section>
+
+        </form>
+
+    </section>
+
 
     </main>
 

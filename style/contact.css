@@ -1,28 +1,61 @@
-form {
+/* On centre le formulaire via un conteneur général */
+.page-contact {
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 50%;
+    justify-content: center;
+    align-items: center;
 }
 
-input {
-    padding: 10px;
-    border: 1px solid black;
+/* On centre le bouton d'envoie du formulaire */
+.pied-formulaire {
+    text-align: center;
 }
 
-textarea {
-    padding: 10px;
-    border: 1px solid black;
-    outline: none;
-    margin-bottom: 20px;
+form {
+    background-color: rgb(154, 125, 125);
+    padding: 30px;
     border-radius: 10px;
 }
 
-fieldset {
-    background-color: beige;
-
+form h1 {
+    font-size: 20px;
 }
 
-legend {
-    background-color: white;
+/* Mise en place de la ligne de séparation */
+.separation {
+    width: 100%;
+    height: 1px;
+    background-color: #747cdf;
+}
+
+form .corps-formulaire {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+form .corps-formulaire .groupe {
+    /* Positionnement dans le flux de la page → il devient le repère de positionnement pour les éléments enfants cad en position absolute */
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+form .corps-formulaire .gauche .groupe input {
+    /* On espace le label de l'input pour des questions d'esthétique */
+    margin-top: 5px; 
+    padding: 10px 5px 10px 30px;
+    /* Bordure des encadrés des input dans une couleur grise (pour l'instant) */
+    border: 1px solid #c9c9c9;
+    /* Couleur de la bordure lors de la saisie de l'input */
+    outline-color: #747cdf;
+    border-radius: 5px;
+}
+
+form .corps-formulaire .gauche .groupe i {
+    /* Positionne l'élément par rapport à son parent le proche qui est la div groupe */
+    position: absolute;
+    left: 10px;
+    top: 39px;
 }
