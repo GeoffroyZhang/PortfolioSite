@@ -3,9 +3,9 @@
 /* Le margin à 0 et en auto permet de supprimer les espaces blancs qui pouvaient apparaître sur le côté */
 body {
     font-family: "Manrope", sans-serif;
-    background-color: rgb(0, 0, 0);
+    background-color: #F5EFE1;
     margin: 0 auto; 
-    color: white;
+    color: black;
 }
 
 /* En têtes */
@@ -39,7 +39,6 @@ h1{
     font-family: "Rochester";
     text-align: center;
     color: white;
-    text-shadow: 2px 2px 0px #000;
 }
 
 /* On ajoute de la marge extérieure pour centrer un peu plus les éléments */

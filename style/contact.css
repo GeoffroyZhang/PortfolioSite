@@ -12,13 +12,14 @@
 }
 
 form {
-    background-color: rgb(154, 125, 125);
+    background-color: #FFF9ED;
     padding: 30px;
     border-radius: 10px;
 }
 
 form h1 {
     font-size: 20px;
+    color: black;
 }
 
 /* Mise en place de la ligne de séparation */
@@ -54,7 +55,7 @@ form .corps-formulaire .gauche .groupe input {
 }
 
 form .corps-formulaire .gauche .groupe .form-icon {
-    /* Positionne l'élément par rapport à son parent le proche qui est la div groupe */
+    /* Positionne l'élément par rapport à son parent le plus proche qui est la div groupe */
     position: absolute;
     color: #747cdf; 
     left: 0;
@@ -83,10 +84,10 @@ form .corps-formulaire .droite .groupe textarea {
     border-radius: 5px;
     /* Enlève la possibilité de redimensionner l'encadré */
     resize: none;
-    height: 74%;
+    height: 80%;
 }
 
-form .pied-formulaire button {
+form .pied-formulaire input {
     /* Espacement entre le bouton et les éléments du formulaire */
     margin-top: 10px;
     background-color: #747cdf;
@@ -108,7 +109,7 @@ form .pied-formulaire button:hover {
 
 }
 
-/* On vérifie si la taille de l'écran de l'utilisateur est < ou = à 920px alors on applique cette propriété sinon non */
+/* On vérifie si la taille de l'écran de l'utilisateur est <= à 920px alors on applique cette propriété sinon non */
 @media screnn and (max-width:920px) {
     form .corps-formulaire .droite {
         margin-left: 0px;
