@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- Le site sera en langue française majoritairement avec un peu de chinois et d'anglais sûrement -->
-<html lang="fr">
+<html>
 
 
 <head>
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style/contact.css">
     <!-- Importation des kits de fontawesome -->
     <script src="https://kit.fontawesome.com/85447f10bb.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -32,26 +33,32 @@
     
     <section class="page-contact">
         <!-- Création de la structure du formulaire -->
-        <form>
+        <form action="" method="get">
             <h1>Contactez-moi !</h1>
             <div class="separation"></div>
             <div class="corps-formulaire">
                 <div class="gauche">
                     <div class="groupe">
-                        <label>Votre prénom</label>
-                        <input type="text">
+                        <label for="prenom">Votre prénom</label>
+                        <!-- Auto focus sur l'input prénom -->
+                        <input type="text" name="prenom" id="prenom" autofocus>
                         <i class="fa-solid fa-user form-icon"></i>
                     </div>
                     <div class="groupe">
-                        <label>Votre nom</label>
-                        <input type="text">
+                        <label for="nom">Votre nom</label>
+                        <input type="text" name="nom" id="nom">
                         <i class="fa-solid fa-id-badge form-icon"></i>
                     </div>
                     <div class="groupe">
-                        <label>Votre adresse e-mail</label>
-                        <input type="e-mail">
+                        <label for="email">Votre adresse e-mail</label>
+                        <input type="email" name="email" id="email" required>
                         <i class="fa-solid fa-envelope form-icon"></i>
-                    </div>    
+                    </div> 
+                    <div class="groupe">
+                        <label for="ville">Votre ville</label>
+                        <input type="text" name="ville" id="ville">
+                        <i class="fa-solid fa-location-dot form-icon"></i>
+                    </div>
                 </div>
                 <div class="droite">
                     <div class="groupe">
@@ -62,7 +69,7 @@
             </div>
 
             <div class="pied-formulaire">
-                    <button>Envoyer le message</button>
+                    <input type="submit" value="Envoyer le message">
             </div>
 
         </form>
