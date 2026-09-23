@@ -53,9 +53,64 @@ form .corps-formulaire .gauche .groupe input {
     border-radius: 5px;
 }
 
-form .corps-formulaire .gauche .groupe i {
+form .corps-formulaire .gauche .groupe .form-icon {
     /* Positionne l'élément par rapport à son parent le proche qui est la div groupe */
     position: absolute;
-    left: 10px;
-    top: 39px;
+    color: #747cdf; 
+    left: 0;
+    top: 25px;
+    padding: 9px 8px;
+}
+
+form .corps-formulaire .droite {
+    /* Espacement entre les éléments à gauche et à droite du formulaire */
+    margin-left: 50px;
+
+}
+
+form .corps-formulaire .droite .groupe {
+    /* Permet de prendre la totalité de la hauteur du côté droit du formulaire */
+    height: 100%;
+}
+
+form .corps-formulaire .droite .groupe textarea {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 2px solid #747cdf;
+    /* Enlève la bordure en couleur lors du clic */
+    outline: none;
+    border-radius: 5px;
+    /* Enlève la possibilité de redimensionner l'encadré */
+    resize: none;
+    height: 74%;
+}
+
+form .pied-formulaire button {
+    /* Espacement entre le bouton et les éléments du formulaire */
+    margin-top: 10px;
+    background-color: #747cdf;
+    color: white;
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    /* Permet de modifier le curseur de l'utilisateur lorsque celui passe le curseur sur le bouton */
+    cursor: pointer;
+    /* Création d'un effet de 0,5 seconde lorsque l'on passe le curseur au dessus du bouton ; transition prend en valeur la propriété transform */
+    transition: transform 0.5s;
+}
+
+/* Animation du bouton lorsque l'on place le curseur au dessus */
+form .pied-formulaire button:hover {
+    transform: scale(1.05);
+
+}
+
+/* On vérifie si la taille de l'écran de l'utilisateur est < ou = à 920px alors on applique cette propriété sinon non */
+@media screnn and (max-width:920px) {
+    form .corps-formulaire .droite {
+        margin-left: 0px;
+    }
 }
