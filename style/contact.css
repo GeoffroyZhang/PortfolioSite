@@ -104,7 +104,7 @@ form .pied-formulaire input {
 }
 
 /* Animation du bouton lorsque l'on place le curseur au dessus */
-form .pied-formulaire button:hover {
+form .pied-formulaire input:hover {
     transform: scale(1.05);
 
 }

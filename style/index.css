@@ -13,13 +13,6 @@ section.top-page {
     text-align: left;
 }
 
-.scroll-down {
-    color: white;
-    text-decoration: none;
-    position: absolute;
-    bottom: 0;
-}
-
 header .header {
     display: flex;
     align-items: center;

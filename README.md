@@ -24,7 +24,6 @@ Projet en cours de développement.
 - `projets.html` : projets de recherche en cours
 - `ressources.html` : ressources disponibles mises à disposition
 - `articles.html` : articles publiés sur le site
-- `contact.html` : formulaire de contact pour me contacter
 
 ### Feuilles de style : 
 - `index.css` 
